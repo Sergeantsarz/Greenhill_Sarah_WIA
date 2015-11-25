@@ -1,7 +1,7 @@
 /*
-     Name:
-     Date:
-     Class & Section:  WIA-####
+     Name: Sarah R. Greenhill
+     Date: 11/25/15
+     Class & Section:  WIA-0001
      Comments: "HTML5 Canvas Drawing"
  */
 
@@ -21,7 +21,22 @@ FILE SETUP
 // Link the main.js file
 // Setup the call to that canvas and get it's 2d context
 //Use Modernizr to verify that your browser supports canvas, include a fallback message
+*/
 
+
+
+//Load different scripts based tests.
+
+Modernizr.load({
+	test: Modernizr.inputtypes.date,
+	yep: "js/success.js",
+	nope: "js/fail.js",
+	complete: function(){
+		//This will run after the js file is loaded based on the case
+		
+		console.log("Testing functionality complete!");
+		}
+	});
 
 /*******************************************
 PART 1
