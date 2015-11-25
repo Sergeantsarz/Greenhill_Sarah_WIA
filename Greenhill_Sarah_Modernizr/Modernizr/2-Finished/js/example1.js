@@ -6,7 +6,7 @@ if(Modernizr.canvas){
 	var ctx = theCanvas.getContext("2d");
 	
 	//Draw some text on our canvas
-	ctx.font = "25pt Georgia";
+	ctx.font = "25pt Helvetica";
 	ctx.fillText("Canvas is supported!", 20, 60);
 	
 	
