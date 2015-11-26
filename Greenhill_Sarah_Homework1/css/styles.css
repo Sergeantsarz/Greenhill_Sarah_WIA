@@ -4,5 +4,9 @@ h1{
 
 canvas{
 	background-color: #b3b3b3;
-	border: dotted;
+	border: dashed #c12adf;
+}
+
+p{
+	text-align: center;
 }

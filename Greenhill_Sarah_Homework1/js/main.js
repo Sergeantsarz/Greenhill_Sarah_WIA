@@ -316,7 +316,17 @@ Reminder to use the drawImage method for all 3 of the ways.
 
 ********************************************/
 
-//Draw images here
+if(pixel){
+
+		var ctx = pixel.getContext("2d");
+	if(ctx){
+	
+	var logo = document.getElementById("img1");
+	//REGULAR ctx.drawImage(logo, 0, 0);	
+	// SCALED ctx.drawImage(logo, 0, 0, 1650, 544);	
+	/*SLICE*/ ctx.drawImage(logo, 100, 20, 400, 300, 50, 50, 200, 200);
+	}
+}
 
 
 
@@ -331,6 +341,29 @@ You must use at least 3 different methods.
 
 ********************************************/
 
-// Draw scene here
+if(scene){
+
+		var ctx = scene.getContext("2d");
+	if(ctx){
+	
+	var image = document.getElementById("sceneImg");
+	ctx.drawImage(image, 0, 0);	
+	
+	ctx.font = "22pt Impact";
+	ctx.fillText("Expelliarmus!", 385, 85);
+	
+	ctx.strokeStyle = "#000000";
+	ctx.lineWidth = 4;
+								
+
+	ctx.strokeRect(365, 25, 200, 100);
+	
+	ctx.strokeRect(310, 130, 35, 35);
+	
+	ctx.strokeRect(260, 170, 25, 25);
+	
+	
+	}
+}
 
 };
