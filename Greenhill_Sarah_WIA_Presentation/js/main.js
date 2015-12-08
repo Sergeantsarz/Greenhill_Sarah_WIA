@@ -3,6 +3,5 @@
 
 $(document).ready(function(){
   $('#wrapper').tubular({videoId: '6v2L2UGZJAM'});
-  $('#buttons').tubular({pauseButtonClass: 'tubular-pause'});
   
 });
