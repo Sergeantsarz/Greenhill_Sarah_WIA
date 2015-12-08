@@ -2,8 +2,8 @@ body{
 	background-color: #000000;
 }
 
-h1{
-	text-align: center;
+blockquote{
+	font-family: 'Orbitron', Helvetica, sans-serif; 
 }
 
 #buttons{
