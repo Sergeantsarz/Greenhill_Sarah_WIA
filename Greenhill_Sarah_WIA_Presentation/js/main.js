@@ -3,5 +3,6 @@
 
 $(document).ready(function(){
   $('#wrapper').tubular({videoId: '6tmbeLTHC_0'});
+  $('#wrapper').tubular({start: '50'});
   
 });
