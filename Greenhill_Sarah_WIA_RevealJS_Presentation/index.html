@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE HTML>
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
@@ -16,7 +16,7 @@
 		<link rel="stylesheet" href="css/theme/moon.css" id="theme">
 
 		<!--Syntax Highlighting-->
-		<!--<link rel="stylesheet" href="lib/css/styles/rainbow.css">-->
+		<link rel="stylesheet" href="lib/css/styles/rainbow.css">
 
 		<!--If the query includes 'print-pdf, use PDF print sheet-->
 		<script>
@@ -83,9 +83,41 @@
                 	<h2>See Tubular in Action!</h2>
                     <ul>
                     	<li class="fragment">As the saying goes, you need to see it in order to believe it.</li>
+                    	<br>
                         <li class="fragment">Click below to see my example site, showcasing the Tubular plugin.</li>
                     </ul>
+                    <br>
 					 <a href="http://sergeantsarz.github.io/Greenhill_Sarah_WIA/Greenhill_Sarah_WIA_Presentation" target="_blank">My Example Site</a>
+					 <p>v Press Down Arrow For Code Breakdown v</p>
+					 
+					 	<section>
+                		<h3>The Code That Fuels my Example Site</h3>
+                        <pre><code>
+
+&lt;!DOCTYPE HTML&gt;
+
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;utf-8&quot;&gt;
+&lt;title&gt;Website&lt;/title&gt;
+  &lt;!--CSS--&gt;
+ &lt;link rel=&quot;stylesheet&quot; href=&quot;css/style.css&quot;&gt;
+  
+&lt;!--JS--&gt;
+&lt;!--[if lt IE 9]&gt;
+&lt;script src=&quot;http://html5shiv.googlecode.com/svn/trunk/html5.js&quot;&gt;&lt;/script&gt;
+&lt;![endif]--&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+  
+&lt;/body&gt;
+&lt;/html&gt;
+                      
+                        
+                        </code>
+                        </pre>
+						</section>
                 </section>
                 <section>
                 	<h2>Ordered list</h2>
@@ -190,33 +222,7 @@
                         </ol>
                 
                 </section>
-                
-                <section>
-                		<h2>Code View</h2>
-                        <pre><code>
-&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;
-&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
-&lt;head&gt;
-&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=UTF-8&quot; /&gt;
-&lt;!-- TemplateBeginEditable name=&quot;doctitle&quot; --&gt;
-&lt;title&gt;Untitled Document&lt;/title&gt;
-&lt;!-- TemplateEndEditable --&gt;
-&lt;!-- TemplateBeginEditable name=&quot;head&quot; --&gt;
-&lt;!-- TemplateEndEditable --&gt;
-&lt;/head&gt;
-
-&lt;body&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-                      
-                        
-                        </code>
-                        </pre>
-                        
-                
-                </section>
-                	
-
+   
 			</div>
 
 		</div>
@@ -235,8 +241,8 @@
 				history: true,
 				center: true,
 
-				theme: Reveal.getQueryHash().theme || 'night', // available themes are in /css/theme
-				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+				theme: Reveal.getQueryHash().theme || 'moon', // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'cube', // default/cube/page/concave/zoom/linear/fade/none
 
 				//Optional libraries used to extend on reveal.js
 				dependencies: [
