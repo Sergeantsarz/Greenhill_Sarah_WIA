@@ -9,6 +9,10 @@ blockquote{
 #buttons{
 	background-color: rgba(0,0,0,0.5);
 	text-align: center;
-	color: #ffffff;
-	
+	color: #ffffff;	
+}
+
+#content{
+	background-color: rgba(0,0,0,0.5);
+	border-bottom-style: #ffffff dotted;
 }
