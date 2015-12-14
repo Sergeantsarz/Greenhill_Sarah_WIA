@@ -4,7 +4,7 @@ body{
 }
 
 nav{
-	display: inline;
+	display: inline-block;
 }
 
 h1{
