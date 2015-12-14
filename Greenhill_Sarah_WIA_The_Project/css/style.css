@@ -3,6 +3,10 @@ body{
 	font-family: cursive;
 }
 
+nav{
+	display: inline;
+}
+
 h1{
 	text-align: center;
 	color: #ffffff;
