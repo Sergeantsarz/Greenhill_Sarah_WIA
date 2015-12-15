@@ -12,7 +12,8 @@ body{
 
 /* Header */
 #header{
-	background-image: url("/images/header.jpg");
+	background-image: url("../images/header.jpg");
+	background-color: blue;
 }
 /* Navigation */
 
