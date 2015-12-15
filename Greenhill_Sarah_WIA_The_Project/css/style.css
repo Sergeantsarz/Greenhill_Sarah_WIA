@@ -18,6 +18,7 @@ body{
 }
 
 #nav ul{
+	text-decoration: none;
 	float: left;
 }
 
