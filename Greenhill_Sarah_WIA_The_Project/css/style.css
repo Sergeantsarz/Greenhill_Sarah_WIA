@@ -11,7 +11,7 @@ body{
 }
 
 /* Header */
-header{
+#header{
 	background-image: url("/images/header.jpg");
 }
 /* Navigation */
