@@ -1,13 +1,21 @@
 body{
 	background-color: #000000;
-	font-family: cursive;
 }
 
-a{
+#wrapper{
+	margin: 0 auto;
+	width: 100%;
+	overflow-x: hidden;
+}
+
+nav{
 	float: left;
+	display: inline;
+	text-align: center;
 }
 
 h1{
+	font-family: cursive;
 	text-align: center;
 	color: #ffffff;
 }
