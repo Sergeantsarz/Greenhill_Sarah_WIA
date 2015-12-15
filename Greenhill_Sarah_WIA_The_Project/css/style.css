@@ -16,6 +16,13 @@ body{
 	text-align: center;
 }
 
+#nav ul{
+	float: left;
+}
+
+#nav ul li{
+	float: left;
+}
 h1{
 	font-family: cursive;
 	text-align: center;
