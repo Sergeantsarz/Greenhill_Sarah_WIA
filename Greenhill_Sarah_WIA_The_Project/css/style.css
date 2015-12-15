@@ -8,7 +8,8 @@ body{
 	overflow-x: hidden;
 }
 
-#nav ul li{
+
+#nav{
 	float: left;
 	display: inline;
 	width: 60%;
