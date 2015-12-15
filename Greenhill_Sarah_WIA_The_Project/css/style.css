@@ -12,7 +12,7 @@ body{
 
 /* Header */
 #header{
-	margin: 10em 0 10em 0;
+	padding: 40em 0 40em 0;
 	background-image: url("../images/header.jpg");
 	background-color: #000000;
 }
