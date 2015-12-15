@@ -43,9 +43,14 @@ body{
 }
 
 #nav ul li{
-	text-decoration: none;
 	float: left;
 	margin: 1em;
+}
+
+/* Links */
+
+a{
+	text-decoration: none;
 }
 
 h1{
