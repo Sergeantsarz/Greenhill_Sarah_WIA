@@ -10,7 +10,7 @@ body{
 
 nav ul li{
 	float: left;
-	display: inline-block;
+	display: inline;
 	width: 60%;
 	text-align: center;
 }
