@@ -10,6 +10,15 @@ body{
 	overflow-x: hidden;
 }
 
+/* Logo */
+
+#logo{
+    padding-bottom: 10px;
+	margin: 0 auto 0 auto;
+	text-align: center;
+    
+}
+
 /* Header */
 #header{
 	padding: 10em 0 10em 0;
