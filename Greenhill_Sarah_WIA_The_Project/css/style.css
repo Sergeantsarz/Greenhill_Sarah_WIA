@@ -3,13 +3,8 @@ body{
 	font-family: cursive;
 }
 
-nav{
-	float: left;
-	
-}
-
 a{
-	display: inline;
+	float: left;
 }
 
 h1{
