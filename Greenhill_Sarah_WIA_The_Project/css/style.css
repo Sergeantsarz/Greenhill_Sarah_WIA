@@ -13,7 +13,7 @@ body{
 /* Logo */
 
 #logo{
-    padding-bottom: 10px;
+    padding-bottom: .5em;
 	margin: 0 auto 0 auto;
 	text-align: center;
     
@@ -21,11 +21,9 @@ body{
 
 /* Header */
 #header{
-	padding: 0 0 10em 0;
 	max-width: 100%;
     height: auto;
 	background-image: url("../images/header.jpg");
-	background-color: #7e0000;
 }
 /* Navigation */
 
@@ -33,9 +31,9 @@ body{
 	float: left;
 	display: inline;
 	width: 100%;
-	margin-left: 30em;
+	padding-left: 30em;
 	text-align: center;
-	background-color: #860000
+	background-color: #5a0000;
 }
 
 #nav ul{
