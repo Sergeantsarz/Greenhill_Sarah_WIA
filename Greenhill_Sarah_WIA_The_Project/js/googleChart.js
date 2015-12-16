@@ -13,9 +13,8 @@ function drawChart(){
 	
 	//Create a data table using an array.
 	
-	var data = google.visualization.arrayToDataTable([
-	["Task", "Hours per Day"], 
-	["Northeast",       1],
+	var data = google.visualization.arrayToDataTable([ 
+	["Northeast", 1],
 	["Southeast", 1],
 	["Mideast", 1],
 	["Midwest", 1],
