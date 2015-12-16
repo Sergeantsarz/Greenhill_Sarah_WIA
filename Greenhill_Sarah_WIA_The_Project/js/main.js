@@ -49,7 +49,7 @@ window.onload = function(){
 
 	if(content){
 
-		var ctx = text.getContext("2d");
+		var ctx = content.getContext("2d");
 		if(ctx){
 	
 			ctx.font = "12pt Love Ya Like A Sister";
