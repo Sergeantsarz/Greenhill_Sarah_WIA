@@ -52,9 +52,9 @@ window.onload = function(){
 		var ctx = content.getContext("2d");
 		if(ctx){
 	
-			ctx.font = "12pt Love Ya Like A Sister";
+			ctx.font = "20pt Love Ya Like A Sister";
 			ctx.fillStyle = '#ffffff';
-			ctx.fillText("About Zombies", 10, 80);	
+			ctx.fillText("About Zombies", 40, 80);	
 		}
 	}
 
