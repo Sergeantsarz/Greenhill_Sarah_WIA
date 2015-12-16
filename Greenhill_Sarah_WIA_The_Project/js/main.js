@@ -46,6 +46,7 @@ window.onload = function(){
 //Canvas 
 
 	var content = document.getElementById("content1");
+	var hand = document.getElementById("hand1");
 
 	if(content){
 
@@ -55,6 +56,16 @@ window.onload = function(){
 			ctx.font = "20pt Love Ya Like A Sister";
 			ctx.fillStyle = '#ffffff';
 			ctx.fillText("About Zombies", 600, 80);	
+		}
+	}
+	
+	if(hand){
+
+		var ctx = hand.getContext("2d");
+		if(ctx){
+	
+			var image = document.getElementById("hand_SM");
+			ctx.drawImage(image, 0, 0);
 		}
 	}
 
