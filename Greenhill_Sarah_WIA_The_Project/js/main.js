@@ -57,7 +57,7 @@ window.onload = function(){
 			ctx.font = "20pt Love Ya Like A Sister";
 			ctx.fillStyle = '#ffffff';
 			ctx.textAlign="center";
-			ctx.fillText("About The Zombie Outbreak", 700, 80);	
+			ctx.fillText("About The Zombie Outbreak", 730, 80);	
 		}
 	}
 
