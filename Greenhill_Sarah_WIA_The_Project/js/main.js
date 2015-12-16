@@ -65,7 +65,7 @@ window.onload = function(){
 		if(ctx){
 	
 			var image = document.getElementById("hand1");
-			ctx.drawImage(image, 0, 0);
+			ctx.drawImage(image, 10, 10);
 		}
 	}
 
