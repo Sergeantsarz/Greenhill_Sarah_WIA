@@ -19,7 +19,7 @@ function drawChart(){
 	["Southeast", 2],
 	["Mideast", 3],
 	["Midwest", 4],
-	["Southwest", 7]
+	["Southwest", 7],
 	["Northwest", 7]
 	]);
 	
