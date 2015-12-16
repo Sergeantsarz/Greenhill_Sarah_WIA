@@ -63,12 +63,9 @@ a:hover{
 }
 
 /* Chart */
-#zombieChart{
-	float: left;
-}
 
 #zombieChart2{
-	float: right;
+	float: left;
 	margin-right: 5em;
 }
 /* Footer */
