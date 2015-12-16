@@ -15,19 +15,19 @@ function drawChart(){
 	
 	var data = google.visualization.arrayToDataTable([
 	["Task", "Hours per Day"], 
-	["Northeast", 1],
-	["Southeast", 2],
+	["Northeast", 10],
+	["Southeast", 8],
 	["Mideast", 3],
 	["Midwest", 4],
-	["Southwest", 1],
-	["Northwest", 2]
+	["Southwest", 6],
+	["Northwest", 7]
 	]);
 	
 	var options ={
 		title: "Percentage of US Populus Affected",
 		is3D: true,
 		pieSliceText: "percentage",
-		sliceVisibilityThreshold: .2,
+		sliceVisibilityThreshold: .3,
 		backgroundColor: '#000000' 
 		//pieStartAngle:45,
 		//width:500,
