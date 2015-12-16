@@ -76,6 +76,7 @@ a:hover{
 #footer{
 	background-color: #5a0000;
 	text-align: center;
+	height: auto;
 }
 
 audio{
