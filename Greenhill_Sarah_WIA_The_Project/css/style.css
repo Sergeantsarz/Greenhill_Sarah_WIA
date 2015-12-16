@@ -27,7 +27,6 @@ body{
 /* Navigation */
 
 #nav{
-	float: left;
 	text-align: center;
 	background-color: #5a0000;
 	border: #000000 dotted;
