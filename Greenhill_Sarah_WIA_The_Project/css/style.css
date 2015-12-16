@@ -30,6 +30,7 @@ body{
 	float: left;
 	display: inline;
 	margin-left: 26em;
+	padding: 0 10em 0 10em;
 	text-align: center;
 	background-color: #5a0000;
 	border: #000000 dotted;
