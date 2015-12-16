@@ -28,9 +28,6 @@ body{
 
 #nav{
 	float: left;
-	display: inline;
-	margin-left: 20em;
-	padding: 0 15em 0 15em;
 	text-align: center;
 	background-color: #5a0000;
 	border: #000000 dotted;
@@ -41,9 +38,14 @@ body{
 	list-style-type: none;
 }
 
-#nav ul li{
+#nav li{
+	display: inline;
 	float: left;
 	margin: 1em;
+}
+
+#nav a{
+	display: inline-block;
 }
 
 /* Links */
