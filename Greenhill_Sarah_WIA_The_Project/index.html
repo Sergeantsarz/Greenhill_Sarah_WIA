@@ -11,9 +11,10 @@
 		<!--JS-->
 		<script type="text/javascript" src="js/main.js"></script>
 		<script type="text/javascript" src="js/modernizr.js"></script>
-		<!--[if lt IE 9]>
+		<!--[if lt IE 9]>-->
 			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-		<![endif]-->
+			<script type="text/javascript" src="js/flashcanvas.js"></script>
+		<!--<![endif]-->
 	</head>
 	<body>
 		<div id="wrapper"><!--Start Wrapper Div-->
@@ -32,7 +33,18 @@
 					</ul>
 				</div><!--End Nav Div-->
 			</div><!--End Header Div-->
+		<div id="content"><!--Start Main Content Div-->
+		
+        	<canvas id="content1" width="450" height="150">About Zombies</canvas>
+        	
+			<audio controls>
+				<source src="sound/intimidation.mp3" type="audio/mpeg">
+				Your browser does not support the audio element.
+			</audio>
+			
+		</div><!--End Main Content Div-->
 		<div id="footer"><!--Start Footer Div-->
+		<canvas id="supported1" width="150" height="100">Unfortunately, your browser does not support canvas.</canvas>
 		</div><!--End Footer Div-->
 		</div><!--End Wrapper Div-->
 	</body>
