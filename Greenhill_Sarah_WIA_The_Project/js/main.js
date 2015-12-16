@@ -12,13 +12,13 @@ window.onload = function(){
 		
 		//Let User Know if Canvas Works
 		ctx.font = "8pt Helvetica";
-		ctx.fillText("Canvas is supported in this browser!", -50, 12);
+		ctx.fillText("Canvas is supported in this browser!", -50, 42);
 		
 	
 		}else {
 			//Canvas is not supported
 			//Polyfill would go here
-			ctx.fillText("Canvas is not supported in this browser!", -50, 12);
+			ctx.fillText("Canvas is not supported in this browser!", -50, 42);
 			
 			}
 
