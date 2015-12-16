@@ -25,7 +25,7 @@ function drawChart(){
 	
 	var options ={
 		title: "Percentage of US Populus Affected",
-		title: {textStyle: {color: 'white'}},
+		titleTextStyle: {color: 'white'},
 		is3D: true,
 		pieSliceText: "percentage",
 		backgroundColor: '#000000', 
