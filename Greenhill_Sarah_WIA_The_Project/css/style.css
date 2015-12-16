@@ -28,7 +28,8 @@ body{
 
 #nav{
 	float: left;
-	display: inline-block;
+	display: inline;
+	margin-left: 20em;
 	text-align: center;
 	background-color: #5a0000;
 	border: #000000 dotted;
