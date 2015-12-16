@@ -53,6 +53,7 @@ window.onload = function(){
 		if(ctx){
 	
 			ctx.font = "12pt Love Ya Like A Sister";
+			ctx.fillStyle = '#ffffff';
 			ctx.fillText("About Zombies", 10, 80);	
 		}
 	}
