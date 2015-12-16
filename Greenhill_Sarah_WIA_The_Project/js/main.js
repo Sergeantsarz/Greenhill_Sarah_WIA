@@ -56,4 +56,9 @@ window.onload = function(){
 			ctx.fillText("About Zombies", 10, 80);	
 		}
 	}
+
+//Audio
+
+var sound = document.getElementById("siteSound");
+sound.volume = 0.5;
 };
