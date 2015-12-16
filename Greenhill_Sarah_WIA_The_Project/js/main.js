@@ -64,7 +64,7 @@ window.onload = function(){
 		var ctx = hand.getContext("2d");
 		if(ctx){
 	
-			var image = document.getElementById("hand_SM");
+			var image = document.getElementById("hand1");
 			ctx.drawImage(image, 0, 0);
 		}
 	}
