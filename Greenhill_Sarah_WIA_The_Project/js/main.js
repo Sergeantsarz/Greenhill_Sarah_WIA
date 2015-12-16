@@ -56,4 +56,4 @@ if(content){
 	ctx.fillText("About Zombies", 10, 80);	
 		
 	}
-}
+};
