@@ -2,6 +2,7 @@
 
 body{
 	background-color: #000000;
+	font-family: 'Rationale', Helvetica, sans-serif;
 }
 
 #wrapper{
@@ -56,7 +57,7 @@ a:hover{
 }
 
 h1{
-	font-family: 'Fredericka the Great', cursive, serif;
+	font-family: 'Love Ya Like A Sister', cursive, serif;
 	text-align: center;
 	color: #ffffff;
 }
