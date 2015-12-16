@@ -61,7 +61,7 @@ window.onload = function(){
 	
 	if(hand){
 
-		var ctx = hand.getContext("2d");
+		var ctx = hand.element.getContext("2d");
 		if(ctx){
 	
 			var image = document.getElementById("hand1");
