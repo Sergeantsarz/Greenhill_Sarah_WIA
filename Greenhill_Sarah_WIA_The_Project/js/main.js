@@ -58,16 +58,7 @@ window.onload = function(){
 			ctx.fillText("About Zombies", 600, 80);	
 		}
 	}
-	
-	if(hand){
 
-		var ctx = hand.getContext("2d");
-		if(ctx){
-	
-			var image = document.getElementById("hand1");
-			ctx.drawImage(image, 10, 10);
-		}
-	}
 
 //Audio
 
