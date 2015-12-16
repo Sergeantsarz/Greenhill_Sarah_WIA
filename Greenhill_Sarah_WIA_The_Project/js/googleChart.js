@@ -16,10 +16,10 @@ function drawChart(){
 	var data = google.visualization.arrayToDataTable([
 	["Task", "Hours per Day"], 
 	["Northeast", 8],
-	["Southeast", 6],
-	["Mideast", 3],
+	["Southeast", 5],
+	["Mideast", 2],
 	["Midwest", 1],
-	["Southwest", 2],
+	["Southwest", 3],
 	["Northwest", 7]
 	]);
 	
