@@ -7,7 +7,6 @@ body{
 #wrapper{
 	margin: 0 auto;
 	width: 100%;
-	overflow-x: hidden;
 }
 
 /* Logo */
@@ -35,7 +34,7 @@ body{
 	padding-left: 25em;
 	text-align: center;
 	background-color: #5a0000;
-	border: #ffffff dotted;
+	border: #000000 dotted;
 }
 
 #nav ul{
