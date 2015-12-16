@@ -87,6 +87,8 @@ a:hover{
 	background-color: #5a0000;
 	text-align: center;
 	height: auto;
+	bottom: 0;
+	top: 0;
 }
 
 audio{
