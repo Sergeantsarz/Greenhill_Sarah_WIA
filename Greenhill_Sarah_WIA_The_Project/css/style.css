@@ -65,8 +65,20 @@ a:hover{
 
 /* Chart */
 
-#zombieChart p{
+#zombieChart{
+	float: left;
+	width: 50%
+}
+
+#zombieChartText{
 	float: right;
+	background-color: #000000;
+	width: 47.18%;
+	height: 450px; 
+}
+
+#zombieChartText p{
+	padding: .5em;
 }
 
 /* Footer */
