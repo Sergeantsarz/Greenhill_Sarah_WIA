@@ -1,3 +1,5 @@
+$(document).ready(function(){
+
 console.log('JavaScript is linked.');
 
 //Modernizr
@@ -63,4 +65,5 @@ window.onload = function(){
 
 var sound = document.getElementById("siteSound");
 sound.volume = 0.5;
+}
 };
