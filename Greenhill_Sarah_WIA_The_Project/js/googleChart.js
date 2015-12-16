@@ -27,7 +27,7 @@ function drawChart(){
 		title: "Percentage of US Populus Affected",
 		is3D: true,
 		pieSliceText: "percentage",
-		sliceVisibilityThreshold: .3,
+		sliceVisibilityThreshold: 1,
 		backgroundColor: '#000000' 
 		//pieStartAngle:45,
 		//width:500,
