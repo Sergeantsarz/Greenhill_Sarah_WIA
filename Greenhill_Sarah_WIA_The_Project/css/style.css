@@ -24,6 +24,12 @@ body{
     height: auto;
 	background-image: url("../images/header.jpg");
 }
+
+h1{
+	font-family: 'Love Ya Like A Sister', cursive, serif;
+	text-align: center;
+	color: #ffffff;
+}
 /* Navigation */
 
 #nav{
@@ -56,8 +62,9 @@ a:hover{
 	color: #000000; 
 }
 
-h1{
-	font-family: 'Love Ya Like A Sister', cursive, serif;
+/* Footer */
+
+#footer{
+	background-color: #929292;
 	text-align: center;
-	color: #ffffff;
 }
