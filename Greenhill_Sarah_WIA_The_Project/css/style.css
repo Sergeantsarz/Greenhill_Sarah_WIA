@@ -68,3 +68,7 @@ a:hover{
 	background-color: #929292;
 	text-align: center;
 }
+
+audio{
+	float: left;
+}

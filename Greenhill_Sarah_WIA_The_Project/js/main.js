@@ -11,7 +11,7 @@ window.onload = function(){
 		var ctx = theCanvas.getContext("2d");
 		
 		//Let User Know if Canvas Works
-		ctx.font = "12pt Helvetica";
+		ctx.font = "8pt Helvetica";
 		ctx.fillText("Canvas is supported in this browser!", 20, 60);
 		
 	
