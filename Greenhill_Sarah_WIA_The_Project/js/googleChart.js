@@ -14,7 +14,7 @@ function drawChart(){
 	//Create a data table using an array.
 	
 	var data = google.visualization.arrayToDataTable([
-	["US Location", "Zombified"], 
+	["Task", "Hours per Day"], 
 	["Northeast", 8],
 	["Southeast", 2],
 	["Mideast", 3],
@@ -24,10 +24,10 @@ function drawChart(){
 	]);
 	
 	var options ={
-		title: "Percentage of Populus Affected",
-		//is3D:true
-		//pieHole: .6
-		//pieSliceText: "percentage",
+		title: "Percentage of US Populus Affected",
+		is3D: true
+		pieSliceText: "percentage",
+		sliceVisibilityThreshold: .2,
 		//pieStartAngle:45,
 		//width:500,
 		//height:500
@@ -37,7 +37,7 @@ function drawChart(){
 	
 	
 	//Create the chart variable
-	var chart = new google.visualization.BarChart(document.getElementById("zombieChart"));
+	var chart = new google.visualization.PieChart(document.getElementById("zombieChart"));
 	
 	//Draw The Chart
 	chart.draw(data, options);
