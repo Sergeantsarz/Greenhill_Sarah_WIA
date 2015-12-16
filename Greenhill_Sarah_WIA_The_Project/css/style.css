@@ -62,6 +62,12 @@ a:hover{
 	color: #000000; 
 }
 
+/* Chart */
+
+#zombieChart{
+	background-color: #5a0000;
+}
+
 /* Footer */
 
 #footer{
