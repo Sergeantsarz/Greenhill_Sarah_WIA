@@ -46,7 +46,6 @@ window.onload = function(){
 //Canvas 
 
 	var content = document.getElementById("content1");
-	var hand = document.getElementById("hand1");
 
 	if(content){
 
