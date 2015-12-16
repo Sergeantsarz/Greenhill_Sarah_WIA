@@ -29,7 +29,7 @@ body{
 #nav{
 	float: left;
 	display: inline;
-	padding: 0 28em 0 28em;
+	width: auto;
 	text-align: center;
 	background-color: #5a0000;
 	border: #000000 dotted;
