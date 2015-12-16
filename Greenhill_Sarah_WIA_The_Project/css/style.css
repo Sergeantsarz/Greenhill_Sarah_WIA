@@ -21,7 +21,6 @@ body{
 #header{
 	max-width: 100%;
     height: auto;
-    padding-bottom: 2em;
 	background-image: url("../images/header.jpg");
 }
 /* Navigation */
