@@ -35,6 +35,7 @@ body{
 	padding-left: 25em;
 	text-align: center;
 	background-color: #5a0000;
+	border: #ffffff dotted;
 }
 
 #nav ul{
