@@ -24,14 +24,16 @@
 		<div id="wrapper"><!--Start Wrapper Div-->
 			<div id="header"><!--Start Header Div-->
 			<div id= "logo"><!--Start Logo Div-->
+				<img src="images/hand_SM2.png"/>
 				<a href="#" title="Zombie Survival Site" target="_blank"><img src="images/logo.png" alt="Zombie Survival Site" /></a>
+				<img src="images/hand_SM.png"/>
 			</div><!--End Logo Div-->
 				<h1>The Zombie Survival Site</h1>
 				
 				<div id="nav" data-role="navbar"><!--Start Nav Div-->
 					<ul>
-						<li><a href="#">Bottom</a></li>
-						<li><a href="#">About The Outbreak</a></li>
+						<li><a href="#footer">Bottom</a></li>
+						<li><a href="#content1">About The Outbreak</a></li>
 						<li><a href="#">Be Prepared</a></li>
 						<li><a href="#">The Basics</a></li>
 						<li><a href="#">The Rules</a></li>
@@ -39,21 +41,318 @@
 				</div><!--End Nav Div-->
 			</div><!--End Header Div-->
 		<div id="content"><!--Start Main Content Div-->
-			<audio id="siteSound" controls autoplay loop>
-				<source src="sound/intimidation.mp3" type="audio/mpeg">
-				Your browser does not support the audio element.
-			</audio>
+			<div><!--Start Audio Div-->
+				<audio id="siteSound" controls autoplay loop>
+					<source src="sound/intimidation.mp3" type="audio/mpeg">
+					Your browser does not support the audio element.
+				</audio>
+			</div><!--End Audio Div-->
 			
-        	<canvas id="content1" width="1000" height="150">About The Zombie Outbreak</canvas>
+        	<canvas id="content1" width="1000" height="150">About The Zombie Outbreak</canvas><!--Canvas Heading-->
         	
         	<div id="zombieChart" style="width: 750px; height: 450px;"></div>
         	<div id="zombieChartText">
-        		<p>Current knowledge suggests that the zombie outbreak occurred on December 25, 2015; patient zero is unknown. Further reports detail the account of the first large-scale attach starting at JFK International Airport at approximately 2:00 AM EST. An unidentified individual fell visibly ill upon approach of landfall in the United States and began attacking fellow passengers as the plane began to land. At this time, the number of infected individuals is climbing with each passing day. The survival of the human race is dependent on the information provided below, please read it carefully.</p></div>
-        		<img src"images/hand.png" alt"Zombie Hand"> 
+        		<p>
+        		Current knowledge suggests that the zombie outbreak occurred on December 25, 2015; patient zero is unknown. Further reports detail the account of the first large-scale attach starting at JFK International Airport at approximately 2:00 AM EST. An unidentified individual fell visibly ill upon approach of landfall in the United States and began attacking fellow passengers as the plane began to land. At this time, the number of infected individuals is climbing with each passing day. The survival of the human race is dependent on the information provided below, please read it carefully.
+	        	<br>
+	        	<br>
+	        	If you know anyone that has been bitten or has had bodily fluids of an infected person(s) pass into a wound or mucous membrane, take extreme caution. Isolate these individuals and await details from your local officials and/or The Center For Disease Control. Further instructions can be found by listening to the radio broadcast on your local AM radio station. All broadcasts will be updated live until it becomes impossible to do so. In the event of total collapse, the radio broadcasts will be looped. 
+	        	<br>
+	        	<br>
+	        	UPDATE: Any person(s) affected by this disease are EXTREMELY dangerous. DO NOT, under ANY circumstances, try to approach or tend to these individuals. 
+	        		
+        		</p></div>
+        	<div class="clear"></div>
+    
+        	<div id="map">
+        		<h2>Affected Areas: World View</h2>
+	        	<div class="map_container">
+					<!-- Dots -->
+					<a class="dot" style="top:99px;  left:113px;" continent="NA" city="Dallas"></a>
+					<a class="dot" style="top:83px;  left:87px;"  continent="NA" city="Seattle"></a>
+					<a class="dot" style="top:173px; left:387px;" continent="AU" city="Perth" ></a>
+					<a class="dot" style="top:178px; left:425px;" continent="AU" city="Sydney" ></a>
+					<a class="dot" style="top:71px;  left:236px;" continent="EU" city="London"></a>
+					<a class="dot" style="top:166px; left:182px;" continent="SA" city="Riodejaneiro"></a>
+					<a class="dot" style="top:102px; left:271px;" continent="AF" city="Tripoli"></a>
+					<a class="dot" style="top:134px; left:153px;" continent="SA" city="Bogota"></a>
+					<a class="dot" style="top:93px;  left:141px;" continent="NA" city="Newyorkcity"></a>
+					<a class="dot" style="top:164px; left:277px;" continent="AF" city="Johannesburg"></a>
+					<a class="dot" style="top:115px; left:375px;" continent="AS" city="Phnompenh"></a>
+					<a class="dot" style="top:94px;  left:412px;" continent="AS" city="Tokyo"></a>
+					<a class="dot" style="top:89px;  left:386px;" continent="AS" city="Tianjin"></a>
+					<a class="dot" style="top:195px; left:153px;" continent="SA" city="Puntaarenas"></a>
+					<a class="dot" style="top:96px;  left:320px;" continent="ME" city="Buxoro"></a>
+					<a class="dot" style="top:113px; left:343px;" continent="ME" city="Anakapalle"></a>
+					<a class="dot" style="top:110px; left:299px;" continent="ME" city="Albahr"></a>
+					<a class="dot" style="top:84px;  left:257px;" continent="EU" city="Rome"></a>
+					<a class="dot" style="top:76px; left:273px;" continent="EU" city="Warszawa"></a>
+		
+					
+					<!-- Form -->
+					<form id="mapForm" name="mapForm" class="form_continent" method="post" action="">
+						<select name="continent" id="continent">
+							<option value="AF">Africa</option>
+							<option value="AS">Asia</option>
+							<option value="AU">Australia</option>
+							<option value="EU">Europe</option>
+							<option value="NA">North America</option>
+							<option value="ME">Middle East</option>
+							<option value="SA">South America</option>
+							<option value="ALL" selected="selected">Show all continents</option>
+						</select>
+					</form>
+		
+					<!-- City details -->
+					<div class="detail_container">
+						<!-- City -->
+						<div class="city_detail">
+							<h3>Please Choose a City</h3>
+							<p>This map shows all the areas throughout the world that have been affected by this outbreak.</p>
+							<p>Current values reflect known facts and figures.</p>
+					</div>
+				</div>
+				
+			</div>
+			<p class="mapText">
+				To the right, you will find a world map outlining the major areas of the world that have been hit hardest by the outbreak of this new and uncharted disease. Use this map to find the areas closest to you, or keep up with the outbreak in other parts of the world. If you or anyone you know lives close to any of these areas, we recommend immediate evacuation. Please remember, no one particular area is safe from this outbreak and your neighborhood can be in the direct line of fire without you even knowing. 
+			</p>
+			<p class="mapText">
+				All content on this map is updated as soon as new reports come in, but there may be room for error, which is dependent upon how readily available information is and the manpower behind keeping the channels of communication open. Please do not let this map influence your decision to remain where you are just because one of the danger zones is not in your immediate area. It should be noted that this disease is extremely dangerous and spreading rapidly throughout the world. The map may not display a danger zone at this time, but new areas can crop up rather quickly. When in doubt, do what is necessary to ensure that your family and your self remain safe and secure. 
+			</p>
+			<p class="mapText">
+				If you have any information about large-scale outbreaks in your area, are currently within a danger-zone not reported on the map, or know anyone that may have useful data for our site; please call 1 - 800 - ZOMB. You safety is always top priority, please do not put yourself in harm's way in order to report anything to our hotline.  
+			</p>
+			
+			
+			
+			<div class="city_detail_container">
+				<!-- City -->
+				<div class="city_detail" id="Sydney">
+					<img class="city_photo" src="images/map/cities/sydney.jpg" alt="Sydney" width="75" height="75" />
+					<div class="city_info">
+						<h2>Sydney</h2>
+						<h3>Australia</h3>
+						<p>Airports: Closed <br> Ports: Closed <br> Infected: 56.3%</p>
+					</div>
+				</div>
+				
+				<!-- City -->
+				<div class="city_detail" id="London">
+					<img class="city_photo" src="images/map/cities/london.jpg" alt="London" width="75" height="75" />
+					<div class="city_info">
+						<h2>London</h2>
+						<h3>Europe</h3>
+						<p>Airports: Closed <br> Ports: Closed <br> Borders: Closed <br> Infected: 48%</p>
+					</div>
+				</div>
+				
+				<!-- City -->
+				<div class="city_detail" id="Riodejaneiro">
+					<img class="city_photo" src="images/map/cities/riodejaneiro.jpg" alt="Rio De Janeiro" width="75" height="75" />
+					<div class="city_info">
+						<h2>Rio de Janeiro</h2>
+						<h3>South America</h3>
+						<p>Airports: Closed <br> Ports: Unknown <br> Borders: Open <br> Infected: 67.2%</p>
+					</div>
+				</div>
+				
+				<!-- City -->
+				<div class="city_detail" id="Tokyo">
+					<img class="city_photo" src="images/map/cities/tokyo.jpg" alt="Brazil" width="75" height="75" />
+					<div class="city_info">
+						<h2>Tokyo</h2>
+						<h3>Asia</h3>
+						<p>Airports: Closed <br> Ports: Closed <br> Infected: 27.5%</p>
+					</div>
+				</div>
+				
+				<!-- City -->
+				<div class="city_detail" id="Johannesburg">
+					<img class="city_photo" src="images/map/cities/johannesburg.jpg" alt="Johannesburg" width="75" height="75" />
+					<div class="city_info">
+						<h2>Johannesburg</h2>
+						<h3>Africa</h3>
+						<p>Airports: Closed <br> Borders: Closed <br> Infected: 37%</p>
+					</div>
+					<div class="clear"></div>
+				</div>
+				
+				<!-- City -->
+				<div class="city_detail" id="Dallas">
+					<img class="city_photo" src="images/map/cities/dallas.jpg" alt="Dallas" width="75" height="75" />
+					<div class="city_info">
+						<h2>Dallas</h2>
+						<h3>North America</h3>
+						<p>Airports: Closed <br> Borders: Closed <br> Infected: 41.3%</p>
+					</div>
+					<div class="clear"></div>
+				</div>
+				
+				
+				<!-- City -->
+				<div class="city_detail" id="Seattle">
+					<img class="city_photo" src="images/map/cities/seattle.jpg" alt="Seattle" width="75" height="75" />
+					<div class="city_info">
+						<h2>Seattle</h2>
+						<h3>North America</h3>
+						<p>Airports: Closed <br> Ports: Closed <br> Borders: Closed <br> Infected: 50%</p>
+					</div>
+					<div class="clear"></div>
+				</div>
+				
+				
+				<!-- City -->
+				<div class="city_detail" id="Perth">
+					<img class="city_photo" src="images/map/cities/perth.jpg" alt="Perth" width="75" height="75" />
+					<div class="city_info">
+						<h2>Perth</h2>
+						<h3>Australia</h3>
+						<p>Airports: Closed <br> Ports: Closed <br> Borders: Closed <br> Infected: 72%</p>
+					</div>
+					<div class="clear"></div>
+				</div>
+				
+				
+				<!-- City -->
+				<div class="city_detail" id="Tripoli">
+					<img class="city_photo" src="images/map/cities/tripoli.jpg" alt="Tripoli" width="75" height="75" />
+					<div class="city_info">
+						<h2>Tripoli</h2>
+						<h3>Africa</h3>
+						<p>Airports: Closed <br> Ports: Closed <br> Borders: Closed <br> Infected: 27%</p>
+					</div>
+					<div class="clear"></div>
+				</div>
+				
+				
+				<!-- City -->
+				<div class="city_detail" id="Bogota">
+					<img class="city_photo" src="images/map/cities/bogota.jpg" alt="Bogota" width="75" height="75" />
+					<div class="city_info">
+						<h2>Bogot&aacute;</h2>
+						<h3>South America</h3>
+						<p>Airports: Closed <br> Ports: Closed <br> Borders: Closed <br> Infected: 34.6%</p>
+					</div>
+					<div class="clear"></div>
+				</div>
+				
+				
+				<!-- City -->
+				<div class="city_detail" id="Newyorkcity">
+					<img class="city_photo" src="images/map/cities/newyorkcity.jpg" alt="New York City" width="75" height="75" />
+					<div class="city_info">
+						<h2>New York City</h2>
+						<h3>North America</h3>
+						<p>Airports: Closed <br> Borders: Closed <br> Infected: 87%</p>
+					</div>
+					<div class="clear"></div>
+				</div>
+				
+				
+				<!-- City -->
+				<div class="city_detail" id="Phnompenh">
+					<img class="city_photo" src="images/map/cities/phompenh.jpg" alt="Phnompenh" width="75" height="75" />
+					<div class="city_info">
+						<h2>Phnom Penh</h2>
+						<h3>Asia</h3>
+						<p>Airports: Closed <br> Ports: Closed <br> Borders: Closed <br> Infected: 29%</p>
+					</div>
+					<div class="clear"></div>
+				</div>
+				
+				
+				<!-- City -->
+				<div class="city_detail" id="Tianjin">
+					<img class="city_photo" src="images/map/cities/tianjin.jpg" alt="Tianjin" width="75" height="75" />
+					<div class="city_info">
+						<h2>Tianjin</h2>
+						<h3>Asia</h3>
+						<p>Airports: Closed <br> Ports: Closed <br> Borders: Closed <br> Infected: 38%</p>
+					</div>
+					<div class="clear"></div>
+				</div>
+				
+				
+				<!-- City -->
+				<div class="city_detail" id="Puntaarenas">
+					<img class="city_photo" src="images/map/cities/puntaarenas.jpg" alt="Puntaarenas" width="75" height="75" />
+					<div class="city_info">
+						<h2>Punta Arenas</h2>
+						<h3>South America</h3>
+						<p>Airports: Closed <br> Ports: Closed <br> Borders: Closed <br> Infected: 36.4%</p>
+					</div>
+					<div class="clear"></div>
+				</div>
+				
+				
+				<!-- City -->
+				<div class="city_detail" id="Buxoro">
+					<img class="city_photo" src="images/map/cities/buxoro.jpg" alt="Buxoro" width="75" height="75" />
+					<div class="city_info">
+						<h2>Buxoro</h2>
+						<h3>Middle East</h3>
+						<p>Airports: Closed <br> Borders: Closed <br> Infected: 42%</p>
+					</div>
+					<div class="clear"></div>
+				</div>
+				
+				
+				<!-- City -->
+				<div class="city_detail" id="Anakapalle">
+					<img class="city_photo" src="images/map/cities/anakapalle.jpg" alt="Anakapalle" width="75" height="75" />
+					<div class="city_info">
+						<h2>Anakapalle</h2>
+						<h3>Middle East</h3>
+						<p>Airports: Closed <br> Ports: Closed <br> Borders: Closed <br> Infected: 26%</p>
+					</div>
+					<div class="clear"></div>
+				</div>
+				
+				
+				<!-- City -->
+				<div class="city_detail" id="Albahr">
+					<img class="city_photo" src="images/map/cities/albahr.jpg" alt="Albahr" width="75" height="75" />
+					<div class="city_info">
+						<h2>Al Bahr</h2>
+						<h3>Middle East</h3>
+						<p>Airports: Closed <br> Borders: Closed <br> Infected: 49.1%</p>
+					</div>
+					<div class="clear"></div>
+				</div>
+				
+				
+				<!-- City -->
+				<div class="city_detail" id="Rome">
+					<img class="city_photo" src="images/map/cities/rome.jpg" alt="Rome" width="75" height="75" />
+					<div class="city_info">
+						<h2>Rome</h2>
+						<h3>Europe</h3>
+						<p>Airports: Closed <br> Ports: Closed <br> Borders: Closed <br> Infected: 29%</p>
+					</div>
+					<div class="clear"></div>
+				</div>
+				
+				
+				<!-- City -->
+				<div class="city_detail" id="Warszawa">
+					<img class="city_photo" src="images/map/cities/warszawa.jpg" alt="Warszawa" width="75" height="75" />
+					<div class="city_info">
+						<h2>Warszawa</h2>
+						<h3>Europe</h3>
+						<p>Airports: Closed <br> Borders: Closed <br> Infected: 67.4%</p>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div>	
         	
 			
 		</div><!--End Main Content Div-->
 		<div id="footer"><!--Start Footer Div-->
+			<ul>
+				<li><a href="#logo">Top</a></li>
+			</ul>
 		<canvas id="supported1" width="500" height="100">Unfortunately, your browser does not support canvas.</canvas>
 		
 		</div><!--End Footer Div-->
